@@ -1,0 +1,213 @@
+@import "../../styles/media-queries.module.scss";
+
+.report_layout {
+  width: auto;
+  // height: calc(100% - 6rem);
+  margin: 0em 1rem;
+  border-radius: 5px;
+  border: 0px solid #f4f2f2;
+  background: #fbfbfb;
+  box-shadow: 0px 2px 4px 0px rgba(198, 198, 198, 0.25);
+  // padding-right: 1.87em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  @include respond(sm) {
+    margin: 0.75em 0.3em;
+  }
+}
+.title {
+  padding-left: 1.34em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: var(--poppins);
+}
+.tab_title {
+  color: #7f7e81;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 2.1em;
+  margin-right: 2.9em;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  @include respond(sm) {
+    font-size: 0.6875rem;
+    margin: 0 0.63em;
+  }
+}
+
+.download_btn {
+  border-radius: 5px;
+  background: #3633b7;
+  color: #fff;
+  padding-left: 1.43em;
+  padding-right: 1.79em;
+  margin-right: 2.5em;
+  float: right;
+  text-transform: capitalize;
+  @include respond(sm) {
+    margin-right: 0.95em;
+    margin-top: 0.3em;
+  }
+}
+.download_btn:hover {
+  border-radius: 5px;
+  background: #3633b7;
+  color: #fff;
+  padding-left: 1.43em;
+  padding-right: 1.79em;
+}
+.download_btn_dis {
+  border-radius: 5px;
+  background: #6b68c5;
+  color: #fff;
+  padding-left: 1.43em;
+  padding-right: 1.79em;
+  margin-right: 2.5em;
+  margin-top: 0.4em;
+  float: right;
+  text-transform: capitalize;
+  @include respond(sm) {
+    margin-right: 0.95em;
+    margin-top: 0.3em;
+  }
+}
+.downloadIcon {
+  margin: 0px 10px;
+}
+.grid_column_item {
+  margin-top: 1em;
+  width: 95%;
+  margin-left: 1em;
+  // background: #fbfbfb;
+  font-size: 0.8rem !important;
+  font-family: var(--poppins) !important;
+  :global(.ant-select-selector) {
+    height: 32px !important;
+    padding-top: 2px;
+    background: #fcfcfc;
+    color: #2d2a30;
+    font-size: 0.8rem;
+    font-family: var(--poppins);
+    border-color: #c1c1c1 !important;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  :global(.ant-select-selection-item) {
+    font-size: 0.8rem;
+    font-family: var(--poppins);
+  }
+}
+
+.grid_column_item_date_picker {
+  height: 80%;
+  margin-top: 0.5rem;
+  width: 37% !important;
+  font-size: 0.8rem;
+  margin-left: 2.1em;
+  font-family: var(--poppins);
+  border-color: #c1c1c1;
+  background: #fcfcfc;
+  @include respond(sm) {
+    width: 90% !important;
+    height: 2.5em;
+    margin-left: 1.5em;
+  }
+
+  input {
+    font-family: var(--poppins);
+    font-size: 0.8rem !important;
+  }
+}
+
+.grid_column_item_date_picker_three {
+  height: 80%;
+  margin-top: 0.5rem;
+  margin-left: 2.1em;
+  width: 20% !important;
+  font-size: 0.8rem;
+  font-family: var(--poppins);
+  border-color: #c1c1c1;
+  background: transparent;
+  input {
+    font-family: var(--poppins);
+    font-size: 0.8rem !important;
+  }
+  @include respond(sm) {
+    width: 90% !important;
+    height: 2.5em;
+    margin-left: 1.5em;
+  }
+}
+.grid_column_item_space {
+  margin-top: 0.5rem;
+  margin-left: 2.1em;
+  width: 90%;
+  font-size: 0.8rem !important;
+  font-family: var(--poppins) !important;
+  @include respond(sm) {
+    margin-left: 1.5em;
+  }
+  :global(.ant-select-selector) {
+    height: 32px !important;
+    padding-top: 2px;
+    background: #fcfcfc !important;
+    border-color: #c1c1c1 !important;
+    color: #2d2a30;
+    // opacity: 0.6000000238418579;
+    font-size: 0.8rem;
+    font-family: var(--poppins);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  input {
+    font-size: 0.8rem !important;
+    font-family: var(--poppins) !important;
+  }
+  :global(.ant-select-selection-item) {
+    font-size: 0.8rem !important;
+    font-family: var(--poppins) !important;
+  }
+}
+.visibilty_hidden {
+  visibility: hidden;
+}
+
+.display_block {
+  display: block;
+}
+.search_options {
+  margin-top: 0.5em;
+  float: right;
+  margin-right: 2em;
+  width: 82%;
+  input {
+    font-size: 0.8rem;
+    font-family: var(--poppins);
+  }
+  @include respond(sm) {
+    float: none;
+    margin: 0.5em 1.2em;
+    width: 90%;
+  }
+}
+// .table_pagination {
+//   min-height: 24px !important;
+//   border: 1px solid green;
+// }
+.No_Record_found {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 160px);
+  font-size: 0.8125rem;
+  font-family: var(--poppins);
+}

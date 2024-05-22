@@ -1,0 +1,67 @@
+@import "../../styles/media-queries.module.scss";
+
+.table_container {
+  box-shadow: none;
+  height: calc(100vh - 130px);
+  width: 100%;
+  .table_bg {
+    width: 100%;
+    .table_head {
+      .table_cell {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding-left: 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .table_cell_amount_data {
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        background: #f2f3f3;
+        text-align: right;
+      }
+    }
+    .table_body {
+      font-size: 0.875rem;
+      width: 300px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .table_body_row {
+        height: 32px;
+        background: #ffffff;
+        transition: all 1s;
+
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          padding: 5px 28px;
+          cursor: pointer;
+        }
+      }
+
+      .table_body_row:hover {
+        background-color: #f6f7fc;
+      }
+    }
+  }
+}

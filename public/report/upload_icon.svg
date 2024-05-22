@@ -1,0 +1,16 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_8063_2064" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+<g id="Group">
+<path id="Vector" d="M23 0H0V23H23V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_8063_2064)">
+<g id="Group_2">
+<path id="Vector_2" d="M2.875 11.504V20.125H20.125V11.5" stroke="white" stroke-width="1.91667" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M15.8125 7.1875L11.5 2.875L7.1875 7.1875" stroke="white" stroke-width="1.91667" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M11.4961 15.3333V2.875" stroke="white" stroke-width="1.91667" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,228 @@
+.login_title {
+  font-family: var(--poppins);
+  font-size: 2.188rem;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+.login_description {
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-family: var(--poppins);
+  color: #828181;
+  text-align: center;
+}
+.switchWrap {
+  padding: 5px;
+  background: #ececec;
+  border-radius: 10px;
+  border: none !important;
+  margin: 2.3em 0em;
+}
+.switchWrap_btn {
+  padding: 13px 65px;
+  border: none;
+  font-size: 0.85rem;
+  color: #000000;
+  font-family: var(--poppins);
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1;
+}
+.switchWrap_btn_active {
+  padding: 13px 65px;
+  border: none;
+  font-size: 0.85rem;
+  color: #000000;
+  background: #ffffff;
+  font-family: var(--poppins);
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1;
+}
+.switchWrap_btn:hover {
+  border: none;
+  background: transparent;
+}
+.switchWrap_btn_active:hover {
+  border: none;
+  background: transparent;
+}
+.login_continue_btn {
+  background: #3633b7;
+  color: #ffffff;
+  text-transform: none;
+  max-height: 44px;
+  padding: 10px 10px;
+  font-family: var(--poppins);
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 2em;
+}
+.login_continue_btn:hover {
+  background: #3633b7;
+  color: #ffffff;
+}
+.width {
+  min-width: 50%;
+}
+.width_spacing {
+  min-width: 50%;
+  margin: 1.2em 0em;
+}
+.footer_label span {
+  font-size: 0.85rem;
+  font-family: var(--poppins);
+  font-weight: 500;
+}
+.footer_label {
+  font-size: 0.85rem;
+  font-family: var(--poppins);
+  font-weight: 500;
+}
+.footer_link {
+  color: #0b26e5;
+  text-decoration: underline;
+  padding: 0px 5px;
+}
+
+.form_input {
+  margin-bottom: 15px;
+  label {
+    font-family: var(--poppins);
+    color: #000000;
+  }
+  label::after {
+    color: red !important;
+    content: "*";
+  }
+  input {
+    font-family: var(--poppins);
+    font-size: 0.85rem;
+  }
+}
+.form_input_not_required {
+  margin-bottom: 15px;
+  label {
+    font-family: var(--poppins);
+    color: #000000;
+  }
+  // label::after {
+  //   color: red !important;
+  //   content: "*";
+  // }
+  input {
+    font-family: var(--poppins);
+    font-size: 0.85rem;
+  }
+}
+
+.verify_otp_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.5em;
+}
+.width_100 {
+  width: 100%;
+  margin-bottom: 15px;
+  label {
+    font-family: var(--poppins);
+    color: #000000;
+    // font-size: 0.85rem;
+  }
+  label::after {
+    color: red !important;
+    content: "*";
+  }
+  :global(div#demo-multiple-name) {
+    font-family: var(--poppins) !important;
+    font-size: 0.85rem !important;
+  }
+}
+.selected_item {
+  font-family: var(--poppins);
+}
+.selected_item_error {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  margin-top: 3px;
+  margin-right: 14px;
+  margin-bottom: 0;
+  margin-left: 14px;
+  color: #d32f2f;
+}
+.gst_gegistered {
+  font-family: var(--poppins) !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2d2a30;
+  margin-bottom: 1em;
+  span {
+    font-family: var(--poppins) !important;
+    font-size: 0.875rem;
+    font-weight: 600 !important;
+  }
+}
+
+.helper_text {
+  color: #d32f2f;
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1023px) {
+  .login_title {
+    font-family: var(--poppins);
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  .width {
+    min-width: 90%;
+  }
+  .width_spacing {
+    min-width: 90%;
+    margin: 1.2em auto;
+  }
+
+  .form_input {
+    margin-bottom: 18px;
+    input {
+      font-family: var(--poppins);
+      font-size: 0.75rem;
+    }
+    label {
+      font-size: 0.75rem;
+    }
+  }
+  .login_continue_btn {
+    font-size: 0.75rem;
+  }
+  .gst_gegistered {
+    font-size: 0.75rem;
+  }
+  .form_input_not_required {
+    margin-bottom: 18px;
+    label {
+      font-size: 0.75rem;
+    }
+    input {
+      font-family: var(--poppins);
+      font-size: 0.75rem;
+    }
+  }
+  .width_100 {
+    margin-bottom: 18px;
+    :global(div#demo-multiple-name) {
+      font-family: var(--poppins) !important;
+      font-size: 0.75rem !important;
+    }
+    label {
+      font-size: 0.75rem !important;
+    }
+  }
+}

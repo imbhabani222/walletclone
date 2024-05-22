@@ -1,0 +1,157 @@
+.table_data_container1 {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(198, 198, 198, 0.25);
+  border-radius: 5px;
+  height: calc(100vh - 255px);
+  // .table_tab_header {
+  //   .table_data_text {
+  //     font-family: var(--poppins);
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     font-size: 1.375rem;
+  //     line-height: 39px;
+  //     letter-spacing: 0.01em;
+  //     color: #2d2a30;
+  //     margin: 41px 26px 32px;
+  //   }
+  // }
+  // .table_container {
+  //   // box-shadow: none;
+  //   // margin-top: 21px;
+  //   .table_bg {
+  //     min-width: 700;
+  //     width: 100%;
+  //     .table_head {
+  //       background-color: #f2f3f3;
+  //       height: 40px;
+  //       .table_cell {
+  //         color: #5a6273;
+  //         font-family: var(--poppins);
+  //         font-style: normal;
+  //         font-weight: 500;
+  //         font-size: 0.813rem;
+  //         line-height: 26px;
+  //       }
+  //     }
+  //     .table_body {
+  //       font-size: 0.875rem;
+  //       .table_body_row {
+  //         height: 57px;
+  //         background: #ffffff;
+  //         .pro_name {
+  //           font-family: var(--poppins);
+  //           font-style: normal;
+  //           font-weight: 400;
+  //           font-size: 0.75rem;
+  //           line-height: 26px;
+  //           color: #444444;
+  //         }
+  //         .api_key_btn {
+  //           background: #3633b7;
+  //           border-radius: 5px;
+  //           color: #ffffff;
+  //           font-family: var(--poppins);
+  //           font-style: normal;
+  //           font-weight: 600;
+  //           font-size: 0.875rem;
+  //           line-height: 26px;
+  //           padding: 0.7em 1.625em;
+  //         }
+  //         .table_body_header {
+  //           font-family: var(--poppins);
+  //           font-style: normal;
+  //           font-weight: 400;
+  //           font-size: 0.813rem;
+  //           line-height: 26px;
+  //           color: #444444;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  .product_wrapper {
+    background-color: #fbfbfb;
+    padding-top: 1.12em;
+    // margin: 2em 1.31em;
+    // padding: 3em 0;
+    .product_name {
+      background-color: #ffffff;
+      color: #2d2a30;
+      font-size: 1.25rem;
+      font-family: var(--poppins);
+      font-weight: 500;
+      line-height: 2.875rem;
+      text-transform: capitalize;
+      padding: 1em 3.56em;
+    }
+    .product_inners {
+      border: 0.5px solid #e6e6e6;
+      background: #f6f7fb;
+      gap: 1.44em;
+      padding: 4.38em 4.56em 0 4.56em;
+      // margin: 2.44em 0 0;
+      .pro_inner_heading {
+        color: #2d2a30;
+        font-size: 1rem;
+        font-family: var(--poppins);
+
+        letter-spacing: 0.01rem;
+      }
+      .pro_inner_box {
+        .pro_inner_copyicon {
+          color: #828282;
+          cursor: pointer;
+        }
+        .api_key_btn {
+          background: #3633b7;
+          border-radius: 5px;
+          color: #ffffff;
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 0.875rem;
+          line-height: 26px;
+          padding: 0.7em 1.625em;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .product_inner {
+      border: 0.5px solid #e6e6e6;
+      background: #f6f7fb;
+      gap: 1.44em;
+      padding: 4.38em 4.56em;
+      // margin: 2.44em 0 0;
+      .pro_inner_heading {
+        color: #2d2a30;
+        font-size: 1rem;
+        font-family: var(--poppins);
+
+        letter-spacing: 0.01rem;
+      }
+      .pro_inner_box {
+        .pro_inner_copyicon {
+          color: #828282;
+          cursor: pointer;
+        }
+        .api_key_btn {
+          background: #3633b7;
+          border-radius: 5px;
+          color: #ffffff;
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 0.875rem;
+          line-height: 26px;
+          padding: 0.7em 1.625em;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+.note_text {
+  padding-bottom: 5px;
+  padding-top: 2.5rem;
+  color: gray;
+}

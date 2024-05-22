@@ -1,0 +1,666 @@
+@import "../../styles/media-queries.module.scss";
+
+.table_container {
+  box-shadow: none;
+  height: calc(100vh - 215px);
+  width: 100%;
+  .table_bg {
+    width: 100%;
+    .table_head {
+      .table_cell {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding-left: 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .table_cells {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding-left: 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .table_cell_amount_data {
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        background: #f2f3f3;
+        text-align: right;
+      }
+    }
+    .table_body {
+      font-size: 0.875rem;
+      width: 300px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .table_body_row {
+        height: 32px;
+        background: #ffffff;
+        transition: all 1s;
+        .table_body_header_amount {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          cursor: pointer;
+          text-align: right;
+        }
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          padding: 5px 28px;
+          cursor: pointer;
+          .btn_submit {
+            font-weight: 600;
+            line-height: 1.625rem;
+            text-transform: capitalize;
+            font-family: var(--poppins);
+            font-size: 0.875rem;
+            background: #3633b7;
+            color: #fff;
+            padding: 0.5rem 4.81rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .btn_success {
+            color: #219653;
+            background: #e0fddb;
+            border: 0.5px solid #219653;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_pending {
+            border: 0.5px solid #ff8329;
+            background: #fcf2eb;
+            color: #ff8329;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_denied {
+            border: 0.5px solid #ed5252;
+            background: #ffeef2;
+            color: #ec5252;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .table_body_row_disable {
+        height: 57px;
+        background: #ffffff;
+        .table_body_header_amount {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          cursor: pointer;
+          text-align: right;
+        }
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: rgba(68, 68, 68, 0.5);
+          .btn_success {
+            color: #219653;
+            background: #e0fddb;
+            border: 0.5px solid #219653;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_pending {
+            border: 0.5px solid #ff8329;
+            background: #fcf2eb;
+            color: #ff8329;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_denied {
+            border: 0.5px solid #ed5252;
+            background: #ffeef2;
+            color: #ec5252;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .table_body_row:hover {
+        background-color: #f6f7fc;
+      }
+    }
+  }
+}
+.drawer_container {
+  .drawer_heading {
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 46px;
+    min-width: 300px;
+    color: #2d2a30;
+    margin: 0.5em 0.7em;
+  }
+  .drawer_cross {
+    cursor: pointer;
+  }
+  .card_wrapper {
+    width: 610px;
+    @include respond(sm) {
+      width: 100%;
+    }
+    .card_heading {
+      font-family: var(--poppins);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.188rem;
+      line-height: 46px;
+      color: #2d2a30;
+      padding: 0 0.875em;
+    }
+    .card_body {
+      display: flex;
+      flex-direction: column;
+      width: 47%;
+      .data_key {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 26px;
+        color: #817f83;
+      }
+      .data_value {
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 26px;
+        color: #2d2a30;
+        inline-size: 150px;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}
+
+.editOption {
+  cursor: pointer;
+}
+.editOptionDisabled {
+  cursor: not-allowed;
+}
+.table_container_data {
+  margin-top: 0.5rem;
+  background-color: #fff;
+  height: calc(100vh - 198px);
+  width: calc(100vw - 140px);
+  box-shadow: rgba(0, 0, 0, 0.12) 1px 4px 6px;
+  @include respond(sm) {
+    width: 100%;
+  }
+  .table_bg {
+    width: 100%;
+    .table_head {
+      .table_cell {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding: 10px 0 10px 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .table_cells {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding: 10px 0 10px 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .table_cell_amount_data {
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        background: #f2f3f3;
+        text-align: right;
+      }
+    }
+    .table_body {
+      font-size: 0.875rem;
+      width: 300px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .table_body_row {
+        height: 32px;
+        background: #ffffff;
+        transition: all 1s;
+        .table_body_header_amount {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          cursor: pointer;
+          text-align: right;
+        }
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          padding: 5px 28px;
+          cursor: pointer;
+          .btn_success {
+            color: #219653;
+            background: #e0fddb;
+            border: 0.5px solid #219653;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_pending {
+            border: 0.5px solid #ff8329;
+            background: #fcf2eb;
+            color: #ff8329;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_denied {
+            border: 0.5px solid #ed5252;
+            background: #ffeef2;
+            color: #ec5252;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .table_body_row_disable {
+        height: 57px;
+        background: #ffffff;
+        .table_body_header_amount {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          cursor: pointer;
+          text-align: right;
+        }
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: rgba(68, 68, 68, 0.5);
+          .btn_success {
+            color: #219653;
+            background: #e0fddb;
+            border: 0.5px solid #219653;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_pending {
+            border: 0.5px solid #ff8329;
+            background: #fcf2eb;
+            color: #ff8329;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_denied {
+            border: 0.5px solid #ed5252;
+            background: #ffeef2;
+            color: #ec5252;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+      .table_body_row:hover {
+        background-color: #f6f7fc;
+      }
+    }
+  }
+}
+.table_container_sales {
+  box-shadow: none;
+  height: calc(100vh - 175px);
+  width: 100%;
+  .table_bg {
+    width: 100%;
+    .table_head {
+      .table_cell {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding-left: 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .table_cells {
+        background-color: #f2f3f3;
+        position: sticky;
+        z-index: 999;
+        top: 0;
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        padding-left: 28px;
+        width: 300px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .table_cell_amount_data {
+        color: #5a6273;
+        font-family: var(--poppins);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        line-height: 15px;
+        background: #f2f3f3;
+        text-align: right;
+      }
+    }
+    .table_body {
+      font-size: 0.875rem;
+      width: 300px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .table_body_row {
+        height: 32px;
+        background: #ffffff;
+        transition: all 1s;
+        .table_body_header_amount {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          cursor: pointer;
+          text-align: right;
+        }
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          padding: 5px 28px;
+          cursor: pointer;
+          .btn_submit {
+            font-weight: 600;
+            line-height: 1.625rem;
+            text-transform: capitalize;
+            font-family: var(--poppins);
+            font-size: 0.875rem;
+            background: #3633b7;
+            color: #fff;
+            padding: 0.5rem 4.81rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+
+          .btn_success {
+            color: #219653;
+            background: #e0fddb;
+            border: 0.5px solid #219653;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_pending {
+            border: 0.5px solid #ff8329;
+            background: #fcf2eb;
+            color: #ff8329;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_denied {
+            border: 0.5px solid #ed5252;
+            background: #ffeef2;
+            color: #ec5252;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .table_body_row_disable {
+        height: 57px;
+        background: #ffffff;
+        .table_body_header_amount {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: #444444;
+          cursor: pointer;
+          text-align: right;
+        }
+        .table_body_header {
+          font-family: var(--poppins);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.813rem;
+          line-height: 26px;
+          color: rgba(68, 68, 68, 0.5);
+          .btn_success {
+            color: #219653;
+            background: #e0fddb;
+            border: 0.5px solid #219653;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_pending {
+            border: 0.5px solid #ff8329;
+            background: #fcf2eb;
+            color: #ff8329;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+          .btn_denied {
+            border: 0.5px solid #ed5252;
+            background: #ffeef2;
+            color: #ec5252;
+            font-size: 0.75rem;
+            line-height: 0.625rem;
+            border-radius: 4px;
+            font-family: var(--poppins);
+            font-style: normal;
+            font-weight: 500;
+            padding: 0.69rem 1.25rem;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .table_body_row:hover {
+        background-color: #f6f7fc;
+      }
+    }
+  }
+}
